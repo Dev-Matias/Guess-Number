@@ -22,6 +22,7 @@ const guessNumber = () => {
     msg.innerHTML = `Congratulations the namber is: ${random}`;
     return true;
   } else {
+    msg.classList.toggle("apply-shake");
     msg.classList.remove("hide");
     msg.classList.remove("msg-blue");
     msg.classList.add("msg-red");
